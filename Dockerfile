@@ -24,7 +24,7 @@ COPY ./context.xml /usr/local/tomcat/webapps/manager/META-INF/
 COPY ./target/CreatePDF.war /usr/local/tomcat/webapps/
 
 # Expose Tomcat port.
-EXPOSE 8888
+EXPOSE 8080
 
 # Start Tomcat
 CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
